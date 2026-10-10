@@ -37,7 +37,7 @@
         body::before {
             content: '';
             position: fixed;
-            top: 25%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 450px;
@@ -55,33 +55,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            gap: 32px;
             z-index: 1;
-        }
-
-        /* Главный текст темно-фиолетового цвета */
-        h1 {
-            font-size: clamp(3.2rem, 12vw, 4.8rem);
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 0.95;
-            text-transform: lowercase;
-            color: #4a154b;
-            background: linear-gradient(135deg, #7b2cbf 0%, #4a1272 60%, #200538 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 25px rgba(82, 24, 140, 0.4);
-            margin: 10px 0;
-            animation: pulseGlow 4s ease-in-out infinite alternate;
-        }
-
-        @keyframes pulseGlow {
-            0% {
-                filter: drop-shadow(0 0 10px rgba(82, 24, 140, 0.3));
-            }
-            100% {
-                filter: drop-shadow(0 0 25px rgba(123, 44, 191, 0.6));
-            }
         }
 
         /* Card Container */
@@ -90,7 +64,7 @@
             background: var(--card-bg);
             border: 1px solid rgba(82, 24, 140, 0.25);
             border-radius: 28px;
-            padding: 24px;
+            padding: 28px 24px;
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7),
@@ -100,9 +74,9 @@
             gap: 20px;
         }
 
-        /* Новая фраза вместо плеера */
+        /* Цитата */
         .quote {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             color: var(--text-muted);
             font-weight: 600;
             letter-spacing: -0.2px;
@@ -121,7 +95,7 @@
         }
 
         .social-item {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: rgba(255, 255, 255, 0.5);
         }
 
@@ -134,20 +108,15 @@
 <body>
 
     <div class="container">
-        <!-- Основной огромный текст -->
-        <h1>happy<br>birthday</h1>
-
         <div class="card">
-            <!-- Фраза вместо плеера -->
+            <!-- Фраза -->
             <div class="quote">
                 pls dont cry u wastin ur time
             </div>
 
-            <!-- Контакты -->
+            <!-- Контакты (только tg) -->
             <div class="socials">
                 <div class="social-item">tg: <span>@gasagnnn</span></div>
-                <div class="social-item">ig: <span>yk my ig js unblock me</span></div>
-                <div class="social-item">tt: <span>yk it too</span></div>
             </div>
         </div>
     </div>
