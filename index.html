@@ -84,39 +84,30 @@
             }
         }
 
-        /* Player Card */
-        .player-card {
+        /* Card Container */
+        .card {
             width: 100%;
             background: var(--card-bg);
             border: 1px solid rgba(82, 24, 140, 0.25);
             border-radius: 28px;
-            padding: 20px;
+            padding: 24px;
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7),
                         0 0 0 1px rgba(82, 24, 140, 0.2);
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 20px;
         }
 
-        /* YouTube Embed */
-        .youtube-iframe {
-            border-radius: 18px;
-            width: 100%;
-            height: 250px;
-            border: none;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Нижний текст u can always count on me grl */
-        .bottom-message {
-            font-size: 1rem;
+        /* Новая фраза вместо плеера */
+        .quote {
+            font-size: 1.25rem;
             color: var(--text-muted);
             font-weight: 600;
-            letter-spacing: 0.5px;
+            letter-spacing: -0.2px;
             text-transform: lowercase;
-            padding-top: 4px;
+            line-height: 1.4;
         }
 
         /* Блок контактов */
@@ -124,7 +115,7 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
-            padding-top: 14px;
+            padding-top: 16px;
             border-top: 1px solid rgba(82, 24, 140, 0.25);
             width: 100%;
         }
@@ -146,20 +137,10 @@
         <!-- Основной огромный текст -->
         <h1>happy<br>birthday</h1>
 
-        <!-- Карточка с плеером и контактами -->
-        <div class="player-card">
-            <!-- Официальное видео Lil Peep - Crybaby -->
-            <iframe 
-                class="youtube-iframe"
-                src="https://www.youtube.com/embed/P28E3c1zJ4w" 
-                title="Lil Peep - crybaby"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-
-            <!-- Надпись под плеером -->
-            <div class="bottom-message">
-                u can always count on me grl
+        <div class="card">
+            <!-- Фраза вместо плеера -->
+            <div class="quote">
+                pls dont cry u wastin ur time
             </div>
 
             <!-- Контакты -->
